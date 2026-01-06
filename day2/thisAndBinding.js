@@ -1,3 +1,4 @@
+
 // this always refers to the nearest object or instance
 
 let obj1 = {
@@ -18,7 +19,7 @@ obj1.totalCost();
 // assigning totalCost function to a variable
 // when called like this, `this` is lost
 let myNewFunction = obj1.totalCost;
-myNewFunction(); // this.price is undefined
+myNewFunction();
 
 // using bind to preserve `this`
 let myNewFunctionWithBind = obj1.totalCost.bind(obj1);
