@@ -1,3 +1,5 @@
+import {First}from"./Home.jsx";
+import Home from './Home.jsx';
 //always start with capital letter to create a component
 //functional component
 let App = ()=>{
