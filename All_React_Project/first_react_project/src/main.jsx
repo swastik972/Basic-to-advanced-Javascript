@@ -22,5 +22,8 @@ createRoot(document.getElementById('root')).render(
   
     <Profile name={"Swastik"} age={20}
     address={"Dhangadhi"}/>
+       <EventHandling/>
+  <Greeting name = "Swastik" last = "Rawat"></Greeting>
+  <DaySix/>
   </StrictMode>
 )

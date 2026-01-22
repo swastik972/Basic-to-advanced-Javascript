@@ -1,41 +1,48 @@
 import React from 'react'
-let Home=()=>{
+
+function Home() {
     return (
-         <div>
-        <h1>Home Page</h1>
-        <p>This is home page</p>
-       
+        <>
+            <h1>Home</h1>
+            <p>This is home page</p>
+        </>
+    )
+}
+
+function First(){
+    return(
+        <>
+          <h1>first</h1>
+            <p>This is first page</p>
+        </>
+    )
+}
+
+function Second(){
+    return(
+        <>
+          <h1>second</h1>
+            <p>This is second page</p>
+        </>
+    )
+}
+
+function Third(){
+    return(
+        <>
+          <h1>third</h1>
+            <p>This is third page</p>
+        </>
+    )
+}
+
+function Greeting({name, last}){
+    return (
+        <div>
+            <h4>"hello its me  " {name} {last} </h4>
         </div>
     )
 }
 
-const First = () => {
-    return (
-        <div>
-            <h1>First Component</h1>
-            <p>This is the first component</p>
-        </div>
-    );
-}
-const Second = () => {
-    return (
-        <div>
-            <h1>Second Component</h1>
-            <p>This is the second component</p>
-        </div>
-    );
-}
-
-const Third = () => {
-    return (
-        <div>
-            <h1>Third Component</h1>
-            <p>This is the third component</p>
-        </div>
-    );
-}
-
-
-
-export default Home;
-export { First, Second, Third };
+export default Home
+export {First, Greeting, Third, Second}
