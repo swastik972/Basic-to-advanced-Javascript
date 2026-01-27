@@ -16,6 +16,7 @@ import ToggleText from './day6/day-6-task/task2.jsx'
 import PasswordToggle from './day6/day-6-task/task3.jsx'
 import TrafficLight from './day6/day-6-task/task4.jsx'
 import QuoteGenerator from './day6/day-6-task/task5.jsx'
+import TaskList from './day7-task/task1.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -33,7 +34,7 @@ createRoot(document.getElementById('root')).render(
     <PasswordToggle/>
     <TrafficLight/>
     <QuoteGenerator/>
-    
+    <TaskList/>
     <Authpage isAuthenticated={false}/>
     <b>After  Login::::::</b>
     <Authpage isAuthenticated={true}/>
