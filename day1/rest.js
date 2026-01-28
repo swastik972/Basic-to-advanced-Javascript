@@ -18,8 +18,8 @@ return numbers.reduce(
     0
 );
 }
-//calling the function with rest operator 
-let result1 = add1(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
-console.log(`result with rest operator:${result1}`);
+// //calling the function with rest operator 
+// let result1 = add1(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
+// console.log(`result with rest operator:${result1}`);
 
 

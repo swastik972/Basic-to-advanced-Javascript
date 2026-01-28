@@ -4,3 +4,4 @@ let taxRate = 0.1; // External variable
 function calculateTax(price) {
   return price * taxRate; // Relies on external variable
 }
+

@@ -28,3 +28,24 @@ let updatingplace={
 }
 console.log("orginal place:",place)
 console.log("updated place:",updatingplace)
+
+let numbers=[1,2,3,4]
+let updatednumbers=[...numbers,5,6]
+console.log(updatednumbers);
+
+// let first=numbers.slice(1);
+// console.log(first);
+
+let obj1={
+    name:"swastik",
+    address:"ktm",
+    age:20,
+}
+
+let obj2={
+    school:"WCA",
+    rollno:1,
+    ...obj1,
+}
+
+console.log(obj2);
