@@ -18,6 +18,7 @@ import TrafficLight from './day6/day-6-task/task4.jsx'
 import QuoteGenerator from './day6/day-6-task/task5.jsx'
 import TaskList from './day7-task/task1.jsx'
 import Task2 from './day7-task/task2.jsx'
+import Task7 from './day6/day-6-task/task7.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -37,7 +38,7 @@ createRoot(document.getElementById('root')).render(
     <QuoteGenerator/>
     <TaskList/>
     <Task2/>
-
+    <Task7/>
 
     <Authpage isAuthenticated={false}/>
     <b>After  Login::::::</b>
