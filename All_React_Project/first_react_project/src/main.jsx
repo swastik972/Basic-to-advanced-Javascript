@@ -19,6 +19,7 @@ import QuoteGenerator from './day6/day-6-task/task5.jsx'
 import TaskList from './day7-task/task1.jsx'
 import Task2 from './day7-task/task2.jsx'
 import Task7 from './day6/day-6-task/task7.jsx'
+import ClickTracker from './day6/day-6-task/task8.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -39,7 +40,8 @@ createRoot(document.getElementById('root')).render(
     <TaskList/>
     <Task2/>
     <Task7/>
-
+    <ClickTracker/>
+    
     <Authpage isAuthenticated={false}/>
     <b>After  Login::::::</b>
     <Authpage isAuthenticated={true}/>
