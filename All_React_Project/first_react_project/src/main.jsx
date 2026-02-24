@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+
+
 import EventHandling from './eventHandling/event_Handling'
 import Profile from './pages/profile'
 
@@ -21,6 +23,19 @@ import Task2 from './day7-task/task2.jsx'
 import Task7 from './day6/day-6-task/task7.jsx'
 import ClickTracker from './day6/day-6-task/task8.jsx'
 
+import DynamicFoodMenu from './pages/DynamicFoodMen.jsx'
+import FoodMenu from './pages/FoodMenu.jsx'
+
+
+
+
+
+
+
+
+
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -32,7 +47,7 @@ createRoot(document.getElementById('root')).render(
     <EventHandling/>}  */}
   
     
-    <Counter/>
+    {/* <Counter/>
     <ToggleText/>
     <PasswordToggle/>
     <TrafficLight/>
@@ -44,8 +59,12 @@ createRoot(document.getElementById('root')).render(
     
     <Authpage isAuthenticated={false}/>
     <b>After  Login::::::</b>
-    <Authpage isAuthenticated={true}/>
+    <Authpage isAuthenticated={true}/> */}
+   {/*<Tasks/>*/}
 
+
+
+   
     {/* <Profile name={"Swastik"} age={20}
     address={"Dhangadhi"}/>
        <EventHandling/>
@@ -53,5 +72,9 @@ createRoot(document.getElementById('root')).render(
   <DaySix/> */}
 
 
-  </StrictMode>
+
+<DynamicFoodMenu/>
+
+
+  </StrictMode>,
 )
