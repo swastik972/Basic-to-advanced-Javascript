@@ -1,6 +1,8 @@
-import { foodMenuList } from "../data/food_menus_data"
+import { foodMenuList } from "../datas/food_menus_data";
 
 const FoodMenu = () => {
+    console.log("FoodMenuList Data:", foodMenuList);
+
     return (
         <div>
             <h1>Food Menu</h1>

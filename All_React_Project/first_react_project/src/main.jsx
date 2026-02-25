@@ -2,16 +2,14 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 
-
 import EventHandling from './eventHandling/event_Handling'
 import Profile from './pages/profile'
 
-
 import App from './App.jsx'
 import Home from './Home.jsx'
-import {First} from './Home.jsx'
-import {Third} from './Home.jsx'
-import {Second}from './Home.jsx'
+import { First } from './Home.jsx'
+import { Third } from './Home.jsx'
+import { Second } from './Home.jsx'
 import Authpage from './day6/auth/Authpage.jsx'
 import Counter from './day6/day-6-task/task1.jsx'
 import ToggleText from './day6/day-6-task/task2.jsx'
@@ -22,59 +20,39 @@ import TaskList from './day7-task/task1.jsx'
 import Task2 from './day7-task/task2.jsx'
 import Task7 from './day6/day-6-task/task7.jsx'
 import ClickTracker from './day6/day-6-task/task8.jsx'
-
-import DynamicFoodMenu from './pages/DynamicFoodMen.jsx'
+import DynamicFoodMenu from './pages/DynamicFoodMenu.jsx'
 import FoodMenu from './pages/FoodMenu.jsx'
-
-
-
-
-
-
-
-
-
-
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* { <App />
+    {/* Uncomment and use the components you need */}
+    {/* <App />
     <Home />
-    <First/>
-     <Second/>
-    <Third/>
-    <EventHandling/>}  */}
-  
+    <First />
+    <Second />
+    <Third />
+    <EventHandling /> */}
     
-    {/* <Counter/>
-    <ToggleText/>
-    <PasswordToggle/>
-    <TrafficLight/>
-    <QuoteGenerator/>
-    <TaskList/>
-    <Task2/>
-    <Task7/>
-    <ClickTracker/>
-    
-    <Authpage isAuthenticated={false}/>
-    <b>After  Login::::::</b>
-    <Authpage isAuthenticated={true}/> */}
-   {/*<Tasks/>*/}
+    {/* <Counter />
+    <ToggleText />
+    <PasswordToggle />
+    <TrafficLight />
+    <QuoteGenerator />
+    <TaskList />
+    <Task2 />
+    <Task7 />
+    <ClickTracker />
+    <Authpage isAuthenticated={false} />
+    <b>After Login::::::</b>
+    <Authpage isAuthenticated={true} /> */}
+    {/* <Tasks /> */}
+    {/* <Profile name={"Swastik"} age={20} address={"Dhangadhi"} />
+    <EventHandling />
+    <Greeting name="Swastik" last="Rawat"></Greeting>
+    <DaySix /> */}
 
-
-
-   
-    {/* <Profile name={"Swastik"} age={20}
-    address={"Dhangadhi"}/>
-       <EventHandling/>
-  <Greeting name = "Swastik" last = "Rawat"></Greeting>
-  <DaySix/> */}
-
-
-
-<DynamicFoodMenu/>
-
-
-  </StrictMode>,
+    {/* Fix or remove the Food component */}
+    <FoodMenu/>
+    <DynamicFoodMenu/>
+  </StrictMode>
 )
