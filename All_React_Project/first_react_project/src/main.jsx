@@ -22,6 +22,7 @@ import Task7 from './day6/day-6-task/task7.jsx'
 import ClickTracker from './day6/day-6-task/task8.jsx'
 import DynamicFoodMenu from './pages/DynamicFoodMenu.jsx'
 import FoodMenu from './pages/FoodMenu.jsx'
+import TaskList1 from './day7-task/task3.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -54,5 +55,6 @@ createRoot(document.getElementById('root')).render(
     {/* Fix or remove the Food component */}
     <FoodMenu/>
     <DynamicFoodMenu/>
+    <TaskList1/>
   </StrictMode>
 )
