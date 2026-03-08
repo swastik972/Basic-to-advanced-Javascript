@@ -66,6 +66,16 @@ const DynamicFoodMenu = () => {
     setisedit(false);
     setEditID(null);
   };
+
+  //delete event handler
+   const handleDeleteFoodMenu = (data) => {
+    const confirmDelete = window.confirm(`Are you sure you want to delete "${data.name}"?`);
+    if (!confirmDelete) return;
+    const filteredFoodMenuList = foodMenuList.filter(
+      (fm) => fm.id !== data.id
+    );
+    setFoodMenuList(filteredFoodMenuList);
+   }
   return (
     <div>
       <h1> Dynamic Food Menu</h1>
@@ -107,7 +117,7 @@ const DynamicFoodMenu = () => {
                   </p>
                   <p>{el.price}</p>
                   <p>{el.description}</p>
-                  <button className=" button Delete">Delete</button>
+                  <button className=" button Delete" onClick={() => handleDeleteFoodMenu(el)}>Delete</button>
                   <span>&nbsp;</span>
                   <span>&nbsp;</span>
                   <button className=" button edit" onClick={() => handleEditButtonClick(el)}>
