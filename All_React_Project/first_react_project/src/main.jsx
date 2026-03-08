@@ -55,9 +55,12 @@ createRoot(document.getElementById('root')).render(
 
     {/* Fix or remove the Food component */}
     <FoodMenu/>
-    <DynamicFoodMenu/>
-    <TaskList1/>
+   <DynamicFoodMenu/>
 
-    <Task4/>
+
+    {/* <TaskList1/>
+    <Task4/> */}
+
+
   </StrictMode>
 )

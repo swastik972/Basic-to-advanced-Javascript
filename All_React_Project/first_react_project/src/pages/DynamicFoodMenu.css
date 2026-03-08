@@ -1,0 +1,27 @@
+.main-container{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.form-container{
+    text-align: start;
+    background-color: teal;
+    color: white;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.button{
+    border: none;
+    background-color: white;
+    color: teal;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.edit-button{
+    color: orange;
+}
+.dlt-button{
+    color: crimson;
+}

@@ -1,25 +1,17 @@
 export let foodMenuList = [
     {
         id: 1,
-        name: "Momo",
+        name: "Pizza",
         price: 1000,
-        description: "A delicious cheesy momo with your choice of toppings.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNpRQzryxP1MjETwMwjZHbhUBwrZLvoTMX8Q&s"
+        description: "A delicious cheesy pizza with your choice of toppings.",
+        image: "https://img.freepik.com/premium-photo/closeup-cheese-pepperoni-pizza-slice-being-lifted_1223942-16181.jpg?w=1060"
     },
     {
         id: 2,
-        name: "Chowmein",
+        name: "Burger",
         price: 800,
-        description: "A delicious chowmein with your choice of vegetables.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CJte3to9KEkTzguPBfRGZCgCeWjmopK0TQ&s",
+        description: "A juicy beef burger with lettuce, tomato, and cheese.",
+        image: "https://recipes.net/wp-content/uploads/2023/07/veggie-indian-burger_c600955990467b492e73154a8d821fc7.jpeg",
     },
-    {
-        id: 3,
-        name: "Pizza",
-        price: 1500,
-        description: "A delicious pizza with your choice of toppings.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CJte3to9KEkTzguPBfRGZCgCeWjmopK0TQ&s",
-    }
-
 
 ]
