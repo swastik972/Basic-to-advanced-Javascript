@@ -15,14 +15,6 @@ const DynamicFoodMenu = () => {
       image:
         "https://img.freepik.com/premium-photo/closeup-cheese-pepperoni-pizza-slice-being-lifted_1223942-16181.jpg?w=1060",
     },
-    // {
-    //   id: 2,
-    //   name: "Burger",
-    //   price: 800,
-    //   description: "A juicy beef burger with lettuce, tomato, and cheese.",
-    //   image:
-    //     "https://recipes.net/wp-content/uploads/2023/07/veggie-indian-burger_c600955990467b492e73154a8d821fc7.jpeg",
-    // },
   ]);
 
   const handleAddFoodMenu = (e) => {
@@ -43,12 +35,36 @@ const DynamicFoodMenu = () => {
 
   //to toggle add and edit 
   const [isedit, setisedit] = useState(false);
+  const [editID, setEditID] = useState(null);
   const handleEditButtonClick = (data) => {
     setname(data.name);
     setprice(data.price);
     setdiscription(data.description);
     seturl(data.image);
+    setEditID(data.id);
     setisedit(true);
+  }
+  
+  const handleEditFoodMenu = (e) => {
+    e.preventDefault();
+    let matchedData = foodMenuList.find((fm) => fm.id === editID);
+
+    //updating data from form
+    matchedData.name = name;
+    matchedData.price = price;
+    matchedData.description = discription;
+    matchedData.image = imgurl;
+
+    //UPDATING food menu array state
+    setFoodMenuList([...foodMenuList]);
+
+    // reset form logic
+    setname("");
+    setprice(0);
+    setdiscription("");
+    seturl("");
+    setisedit(false);
+    setEditID(null);
   };
   return (
     <div>
@@ -103,7 +119,7 @@ const DynamicFoodMenu = () => {
           })}
         </div>
         <div className="form-container">
-          <form onSubmit={handleAddFoodMenu}>
+          <form onSubmit={isedit ? handleEditFoodMenu : handleAddFoodMenu}>
             <h3>Food Menu</h3>
             <label>
               Food name
@@ -128,9 +144,8 @@ const DynamicFoodMenu = () => {
             </label><br/>
             <button className={`button ${isedit ? "edit-button" : "add-button"}`} type="submit">
               {isedit ? "Edit Food Menu" : "Add Food Menu"}
-
-
             </button>
+
           </form>
         </div>
       </div>
