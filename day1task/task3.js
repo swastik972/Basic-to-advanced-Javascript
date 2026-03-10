@@ -3,7 +3,7 @@ let greet = (Swastik) => {
     return `Hello, ${Swastik}!`;
 }
 
-greet("Swastik");
+// greet("Swastik");
 console.log(greet("Swastik"));
 
 // Task 3 – Arrow Function Simple
@@ -20,3 +20,5 @@ console.log(greet("Swastik"));
     //     return a*a;
     // }
     // console.log(square(5));
+
+    
