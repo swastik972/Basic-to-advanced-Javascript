@@ -24,6 +24,10 @@ import DynamicFoodMenu from './pages/DynamicFoodMenu.jsx'
 import FoodMenu from './pages/FoodMenu.jsx'
 import TaskList1 from './day7-task/task3.jsx'
 import Task4 from './day7-task/task4.jsx'
+import UseMemoComponent from './day9/UseMemoComponent.jsx'
+import USeCallbackComponent from './day9/UseCallbackButton.jsx'
+import TodoExample from './day9/Todo_Example.jsx'
+import UseReducerExample from './day9/UseReducerExample.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -56,8 +60,10 @@ createRoot(document.getElementById('root')).render(
     {/* Fix or remove the Food component */}
     <FoodMenu/>
    <DynamicFoodMenu/>
-
-
+  <UseMemoComponent/>
+  <USeCallbackComponent/>
+  <TodoExample/>
+  <UseReducerExample/>
     {/* <TaskList1/>
     <Task4/> */}
 
