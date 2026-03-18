@@ -1,6 +1,6 @@
 import useFetch from "./my_custom_hook"
 const TodoExample=()=>{
-    const [todos,setTodos]=useFetch("https://jsonplaceholder.typicode.com/todos");
+    const [todos]=useFetch("https://jsonplaceholder.typicode.com/todos");
  
     return(
         <div>

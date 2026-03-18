@@ -28,6 +28,10 @@ import UseMemoComponent from './day9/UseMemoComponent.jsx'
 import USeCallbackComponent from './day9/UseCallbackButton.jsx'
 import TodoExample from './day9/Todo_Example.jsx'
 import UseReducerExample from './day9/UseReducerExample.jsx'
+import AComp from './day9/UseContextComponent.jsx'
+import Themetoggle from './day9/ThemeToggle.jsx'
+import Dashboard from './day6/auth/Dashboard.jsx'
+import ThemeContextProvider from './day9/ThemeContextProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -64,6 +68,12 @@ createRoot(document.getElementById('root')).render(
   <USeCallbackComponent/>
   <TodoExample/>
   <UseReducerExample/>
+  <AComp/>
+  <ThemeContextProvider>
+  <Themetoggle/>
+  <Dashboard/>
+  </ThemeContextProvider>
+ 
     {/* <TaskList1/>
     <Task4/> */}
 
