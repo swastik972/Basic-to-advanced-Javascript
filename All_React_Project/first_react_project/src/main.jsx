@@ -8,6 +8,8 @@ import './index.css'
 import App from './App.jsx'
 import UserDetails from './day12/UserDetails.jsx'
 import UserProfile from './day12/profile.jsx'
+import Comments from './day13/Comments.jsx'
+import Todo from './day13/todo.jsx'
 // import Home from './Home.jsx'
 // import { First } from './Home.jsx'
 // import { Third } from './Home.jsx'
@@ -37,57 +39,59 @@ import UserProfile from './day12/profile.jsx'
 
 createRoot(document.getElementById('root')).render(
  
-<div>
-  <App/>
-</div>
-  // <StrictMode>
-  //    Uncomment and use the components you need 
-  //    <App />
-  //   <Home />
-  //   <First />
-  //   <Second />
-  //   <Third />
-  //   <EventHandling /> 
-    
-  //    <Counter />
-  //   <ToggleText />
-  //   <PasswordToggle />
-  //   <TrafficLight />
-  //   <QuoteGenerator />
-  //   <TaskList />
-  //   <Task2 />
-  //   <Task7 />
-  //   <ClickTracker />
-  //   <Authpage isAuthenticated={false} />
-  //   <b>After Login::::::</b>
-  //   <Authpage isAuthenticated={true} /> 
-  //    <Tasks /> 
-  //    <Profile name={"Swastik"} age={20} address={"Dhangadhi"} />
-  //   <EventHandling />
-  //   <Greeting name="Swastik" last="Rawat"></Greeting>
-  //   <DaySix /> 
 
-  //  Fix or remove the Food component 
-
-
-  //  <FoodMenu/>
-  //  <DynamicFoodMenu/>
-  // <UseMemoComponent/>
-  // <USeCallbackComponent/>
-  // <TodoExample/>
-  // <UseReducerExample/>
-  // <AComp/>
-  // <ThemeContextProvider>
-  // <Themetoggle/>
-  // <Dashboard/>
-  // </ThemeContextProvider>
  
-  //    <TaskList1/>
-  //   <Task4/> 
+
+  <StrictMode>
+  
+    {/* Uncomment and use the components you need */}
+      {/* <App />
+    <Home />
+    <First />
+    <Second />
+    <Third />
+    <EventHandling /> 
+    
+     <Counter />
+    <ToggleText />
+    <PasswordToggle />
+    <TrafficLight />
+    <QuoteGenerator />
+    <TaskList />
+    <Task2 />
+    <Task7 />
+    <ClickTracker />
+    <Authpage isAuthenticated={false} />
+    <b>After Login::::::</b>
+    <Authpage isAuthenticated={true} /> 
+     <Tasks /> 
+     <Profile name={"Swastik"} age={20} address={"Dhangadhi"} />
+    <EventHandling />
+    <Greeting name="Swastik" last="Rawat"></Greeting>
+    <DaySix /> 
+
+   Fix or remove the Food component 
+
+
+   <FoodMenu/>
+   <DynamicFoodMenu/>
+  <UseMemoComponent/>
+  <USeCallbackComponent/>
+  <TodoExample/>
+  <UseReducerExample/>
+  <AComp/>
+  <ThemeContextProvider>
+  <Themetoggle/>
+  <Dashboard/>
+  </ThemeContextProvider>
+ 
+     <TaskList1/>
+    <Task4/>   */}
 
    
+{/* <Comments/> */}
+<Todo/>
 
-
-  // </StrictMode>
+  </StrictMode>
 )
   
